@@ -24,6 +24,7 @@ body {
 .footer {
      grid-area: footer;
      font-family: 'Flamenco';
+     background: #DEC200;
      }
 
 .container {
