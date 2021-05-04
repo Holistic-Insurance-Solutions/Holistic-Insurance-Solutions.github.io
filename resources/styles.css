@@ -54,16 +54,6 @@ a{
      transition: 0.3s
      }
 
-img {
-     border-radius: 50%;
-     border: 0.7em solid #008B8B;
-     }
-
-svg {
-     width: 35%;
-     height: 35%;
-     }
-
 button {
      color: #FCFAF0;
      background: black;
@@ -91,6 +81,9 @@ button {
      color: #FCFAF0;
      }
 
+.hlist { display: flex; }
+.hlist li { list-style-type: none; }
+
 /* CONTENT ELEMENTS */
 
 .grid-row {
@@ -110,39 +103,11 @@ button {
 
 /* FOOTER ELEMENTS */
 
-.about,
-.follow-me,
-.links-intro {
-     font-family: 'Patrick Hand SC';
-     font-size: 2em;
-     }
-
-.social-media,
-.links{
-     display: flex;
-     list-style: none;
-     }
-
-.links {
-     justify-content: space-between;
-     align-self: flex-end;
-     }
-
-.social-media {
-     display: flex;
-     justify-content: center;
-     }
-
-.links,
-.links-intro,
-.copyright {
-     font-size: 0.85em;
-     }
-
 @media (max-width: 850px) {
     .container {
          grid-template-rows: 200px 1100px 75px;
          }
+    .hlist { flex-wrap: wrap; }
     .header {
          padding: 1em;
          }
@@ -171,13 +136,6 @@ button {
     .links,
     .links-intro {
          font-size: 0.8em;
-         }
-    svg {
-         width: 45%;
-         height: 45%
-         }
-    img {
-         width: 60%
          }
     }
 
@@ -214,13 +172,6 @@ button {
     .links-intro {
          font-size: 0.72em;
          }
-    svg {
-         width: 45%;
-         height: 45%
-         }
-    img {
-         width: 75%
-         }
     }
 
 @media (max-width: 550px) {
@@ -251,13 +202,6 @@ button {
          margin-left: auto;
          margin-right: auto;
          padding: 1em;
-         }
-    svg {
-         width: 55%;
-         height: 55%
-         }
-    img {
-         width: 75%
          }
     }
 
@@ -290,13 +234,6 @@ button {
          margin-right: auto;
          padding: 1em;
          }
-    svg {
-         width: 65%;
-         height: 65%
-         }
-    img {
-         width: 75%
-         }
     }
 
 @media (max-width: 370px) {
@@ -328,12 +265,6 @@ button {
          margin-right: auto;
          padding: 1em;
          }
-    svg {
-         width: 65%;
-         height: 65%
-         }
-    img {
-         width: 75%
          }
     }
 
@@ -365,12 +296,5 @@ button {
          margin-left: auto;
          margin-right: auto;
          padding: 1em;
-         }
-    svg {
-         width: 65%;
-         height: 65%
-         }
-    img {
-         width: 75%
          }
     }
