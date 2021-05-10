@@ -137,6 +137,8 @@ button {
     .links-intro {
          font-size: 0.8em;
          }
+    svg {width: 30%}
+    img {width: 150%}
     }
 
 @media (max-width: 750px) {
