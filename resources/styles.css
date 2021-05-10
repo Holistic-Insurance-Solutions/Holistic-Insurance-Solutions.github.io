@@ -37,7 +37,7 @@ body {
           "content"
           "footer";
      grid-template-columns: 1fr;
-     grid-template-rows: 180px 550px 100px;
+     grid-template-rows: 175px 1650px 100px;
      }
 
 .header,
@@ -105,7 +105,7 @@ button {
 
 @media (max-width: 850px) {
     .container {
-         grid-template-rows: 200px 1100px 75px;
+         grid-template-rows: 300px 1100px 75px;
          }
     .hlist { flex-wrap: wrap; }
     .header {
@@ -137,7 +137,7 @@ button {
     .links-intro {
          font-size: 0.8em;
          }
-    svg {width: 30%}
+    svg {width: 25%}
     img {width: 150%}
     }
 
