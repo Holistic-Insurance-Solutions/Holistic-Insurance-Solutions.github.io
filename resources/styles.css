@@ -37,7 +37,7 @@ body {
           "content"
           "footer";
      grid-template-columns: 1fr;
-     grid-template-rows: 175px 1650px 100px;
+     grid-template-rows: 350px 1650px 100px;
      }
 
 .header,
@@ -67,22 +67,23 @@ button {
 
 /* HEADER ELEMENTS */
 
-.title {
-     text-transform: uppercase;
-     font-size: 150%;
-     }
-
-.sub-title {
-     font-family: 'Flamenco';
-     }
-
-.title,
-.sub-title {
+.hlist {
+     display: flex;
      color: #FCFAF0;
+     justify-content: center;
+     font-size: 1.25em;
      }
 
-.hlist { display: flex; }
-.hlist li { list-style-type: none; }
+.hlist li {
+     list-style-type: none;
+     display: inline;
+     padding: 0.75em;
+     justify-content: center;
+     }
+
+/* Stick divs to the bottom of the menu */
+#wrapper{position:relative;}
+#bottom{position:absolute; bottom:0;}
 
 /* CONTENT ELEMENTS */
 
@@ -107,16 +108,12 @@ button {
     .container {
          grid-template-rows: 300px 1100px 75px;
          }
-    .hlist { flex-wrap: wrap; }
+    .hlist {
+         flex-wrap: wrap;
+         font-size: 1em;
+         }
     .header {
          padding: 1em;
-         }
-    .title {
-         text-transform: uppercase;
-         font-size: 150%;
-         }
-    .sub-title {
-         font-size: 120%;
          }
     .content {
          align-content: center;
@@ -137,166 +134,6 @@ button {
     .links-intro {
          font-size: 0.8em;
          }
-    svg {width: 25%}
+    svg {width: 35%}
     img {width: 150%}
-    }
-
-@media (max-width: 750px) {
-    .container {
-         grid-template-rows: 200px 1100px 75px;
-         }
-    .header {
-         padding: 1em;
-         }
-    .title {
-         text-transform: uppercase;
-         font-size: 150%;
-         }
-    .sub-title {
-         font-size: 120%;
-         }
-    .content {
-         align-content: center;
-         }
-    .footer {
-         font-size: 0.9em;
-         }
-    .grid-row {
-         display: block;
-         }
-    .col {
-         max-width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-         padding: 1em;
-         }
-    .links,
-    .links-intro {
-         font-size: 0.72em;
-         }
-    }
-
-@media (max-width: 550px) {
-    .container {
-         grid-template-rows: 180px 750px 75px;
-         }
-    .header {
-         padding: 1em;
-         }
-    .title {
-         text-transform: uppercase;
-         font-size: 120%;
-         }
-    .sub-title {
-         font-size: 95%;
-         }
-    .content {
-         align-content: center;
-         }
-    .footer {
-         font-size: 0.75em;
-         }
-    .grid-row {
-         display: block;
-         }
-    .col {
-         max-width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-         padding: 1em;
-         }
-    }
-
-@media (max-width: 450px) {
-    .container {
-         grid-template-rows: 180px 650px 75px;
-         }
-    .header {
-         padding: 1em;
-         }
-    .title {
-         text-transform: uppercase;
-         font-size: 100%;
-         }
-    .sub-title {
-         font-size: 85%;
-         }
-    .content {
-         align-content: center;
-         }
-    .footer {
-         font-size: 0.75em;
-         }
-    .grid-row {
-         display: block;
-         }
-    .col {
-         max-width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-         padding: 1em;
-         }
-    }
-
-@media (max-width: 370px) {
-    .container {
-         grid-template-rows: 180px 600px 75px;
-         }
-    .header {
-         padding: 1em;
-         }
-    .title {
-         text-transform: uppercase;
-         font-size: 90%;
-         }
-    .sub-title {
-         font-size: 80%;
-         }
-    .content {
-         align-content: center;
-         }
-    .footer {
-         font-size: 0.6em;
-         }
-    .grid-row {
-         display: block;
-         }
-    .col {
-         max-width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-         padding: 1em;
-         }
-         }
-    }
-
-@media (max-width: 260px) {
-    .container {
-         grid-template-rows: 200px 520px 75px;
-         }
-    .header {
-         padding: 1em;
-         }
-    .title {
-         text-transform: uppercase;
-         font-size: 80%;
-         }
-    .sub-title {
-         font-size: 70%;
-         }
-    .content {
-         align-content: center;
-         }
-    .footer {
-         font-size: 0.5em;
-         }
-    .grid-row {
-         display: block;
-         }
-    .col {
-         max-width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-         padding: 1em;
-         }
     }
