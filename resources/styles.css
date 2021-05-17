@@ -145,4 +145,5 @@ button {
          }
     .hlist li {flex-wrap: block;  justify-content: center;}
     svg {width: 40%}
+    img {width: 150%}
     }
