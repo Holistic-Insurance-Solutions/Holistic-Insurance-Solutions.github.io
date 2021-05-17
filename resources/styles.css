@@ -130,7 +130,7 @@ button {
     img {width: 145%}
     }
 
-@media (max-width: 850px) {
+@media (max-width: 400px) {
     .container {
          grid-template-rows: 350px 1100px 75px;
           }
