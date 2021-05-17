@@ -121,11 +121,18 @@ button {
          display: block;
          }
     #col {
-         max-width: 80%;
+         max-width: 100%;
          margin-left: auto;
          margin-right: auto;
          padding: 1em;
          }
     svg {width: 35%}
-    img {width: 150%}
+    img {width: 145%}
     }
+
+@media (max-width: 850px) {
+    .container {
+         grid-template-rows: 350px 1100px 75px;
+          }
+    svg {width: 40%}
+        }
