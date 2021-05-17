@@ -143,7 +143,6 @@ button {
     #grid-row {
          display: block;
          }
-
     .hlist li {flex-wrap: block;  justify-content: center;}
     svg {width: 40%}
     }
