@@ -130,13 +130,13 @@ button {
     img {width: 145%}
     }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
     .container {
-         grid-template-rows: 375px 1100px 75px;
+         grid-template-rows: 400px 1100px 75px;
          }
     .hlist {
          flex-wrap: wrap;
          font-size: 1em;
          }
     svg {width: 40%}
-        }
+    }
