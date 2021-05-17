@@ -103,7 +103,7 @@ button {
 
 @media (max-width: 850px) {
     .container {
-         grid-template-rows: 375px 1100px 75px;
+         grid-template-rows: 275px 1100px 75px;
          }
     .hlist {
          font-size: 1em;
@@ -133,7 +133,7 @@ button {
 
 @media (max-width: 350px) {
     .container {
-         grid-template-rows: 450px 1100px 75px;
+         grid-template-rows: 350px 1100px 75px;
          }
     .hlist {
          flex-wrap: wrap;
