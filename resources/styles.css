@@ -76,7 +76,7 @@ button {
 
 .hlist li {
      list-style-type: none;
-     display: inline;
+     display: block;
      padding: 0.75em;
      justify-content: center;
      }
@@ -132,11 +132,12 @@ button {
 
 @media (max-width: 350px) {
     .container {
-         grid-template-rows: 450px 1100px 75px;
+         grid-template-rows: 375px 1100px 75px;
          }
     .hlist {
          flex-wrap: wrap;
          font-size: 1em;
          }
+    .hlist li {flex-wrap: block;}
     svg {width: 40%}
     }
