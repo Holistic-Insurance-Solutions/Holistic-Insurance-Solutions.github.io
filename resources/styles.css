@@ -133,6 +133,10 @@ button {
 @media (max-width: 400px) {
     .container {
          grid-template-rows: 375px 1100px 75px;
-          }
+         }
+    .hlist {
+         flex-wrap: wrap;
+         font-size: 1em;
+         }
     svg {width: 40%}
         }
