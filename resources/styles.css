@@ -132,7 +132,7 @@ button {
 
 @media (max-width: 350px) {
     .container {
-         grid-template-rows: 400px 1100px 75px;
+         grid-template-rows: 450px 1100px 75px;
          }
     .hlist {
          flex-wrap: wrap;
