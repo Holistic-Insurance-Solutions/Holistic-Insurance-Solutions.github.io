@@ -66,6 +66,7 @@ button {
      }
 
 /* HEADER ELEMENTS */
+.logo {justify-content: center;}
 
 .hlist {
      display: flex;
@@ -107,6 +108,7 @@ button {
     .hlist {
          flex-wrap: wrap;
          font-size: 1em;
+         justify-content: center;
          }
     .header {
          padding: 1em;
@@ -127,7 +129,7 @@ button {
          padding: 1em;
          }
     svg {width: 35%}
-    img {width: 145%}
+    img {width: 100%}
     }
 
 @media (max-width: 350px) {
@@ -137,7 +139,8 @@ button {
     .hlist {
          flex-wrap: wrap;
          font-size: 1em;
+         justify-content: center;
          }
-    .hlist li {flex-wrap: block;}
+    .hlist li {flex-wrap: block;  justify-content: center;}
     svg {width: 40%}
     }
