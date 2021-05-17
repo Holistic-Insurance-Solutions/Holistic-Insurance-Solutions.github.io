@@ -106,7 +106,6 @@ button {
          grid-template-rows: 375px 1100px 75px;
          }
     .hlist {
-         flex-wrap: wrap;
          font-size: 1em;
          justify-content: center;
          }
