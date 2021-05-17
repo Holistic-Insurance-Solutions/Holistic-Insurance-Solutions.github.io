@@ -140,6 +140,10 @@ button {
          font-size: 0.75em;
          justify-content: center;
          }
+    #grid-row {
+         display: block;
+         }
+
     .hlist li {flex-wrap: block;  justify-content: center;}
     svg {width: 40%}
     }
