@@ -9,6 +9,8 @@ body {
      text-align: center;
      background: #FCFAF0;
      font-family: 'Alice';
+     margin: 0em;
+     padding: 0em;
      }
 
 .header {
@@ -37,7 +39,7 @@ body {
           "content"
           "footer";
      grid-template-columns: 1fr;
-     grid-template-rows: 350px 1650px 100px;
+     grid-template-rows: 350px 4200px 100px;
      }
 
 .header,
@@ -65,6 +67,8 @@ button {
      cursor: pointer;
      margin: 1em;
      }
+
+h1,h2,h3 { font-weight:normal; }
 
 /* HEADER ELEMENTS */
 .logo {justify-content: center;}
@@ -101,6 +105,18 @@ button {
 
 .questions img {max-width: 100%;}
 
+.insurance-intro img {max-width: 35%;}
+.insurance-intro h1 {font-size: 4em;}
+.insurance-intro p {font-size: 2.5em; line-height: 1.25;}
+
+.investment-intro img {max-width: 35%;}
+.investment-intro h1 {font-size: 4em;}
+.investment-intro p {font-size: 2.5em; line-height: 1.25;}
+
+
+.retirement-intro img {max-width: 35%;}
+.retirement-intro h1 {font-size: 4em;}
+.retirement-intro p {font-size: 2.5em; line-height: 1.25;}
 
 /* FOOTER ELEMENTS */
 
@@ -131,6 +147,8 @@ button {
          padding: 1em;
          }
     svg {width: 35%}
+
+    .insurance-intro h1 {font-size: 3em;}
     }
 
 @media (max-width: 350px) {
