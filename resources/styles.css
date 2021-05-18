@@ -13,10 +13,24 @@ body {
      padding: 0em;
      }
 
+.container {
+     font-size: 1em;
+     width: 100%;
+     height: 100vh;
+     display: grid;
+     grid-template-areas:
+          "header"
+          "content"
+          "footer";
+     grid-template-columns: 1fr;
+     grid-template-rows: 375px 3200px 100px;
+     }
+
 .header {
      grid-area: header;
      font-family: 'Flamenco';
      background: #DEC200;
+     font-size: 1.25em;
      }
 
 .content {
@@ -29,24 +43,6 @@ body {
      background: #DEC200;
      }
 
-.container {
-     font-size: 1em;
-     width: 100%;
-     height: 100vh;
-     display: grid;
-     grid-template-areas:
-          "header"
-          "content"
-          "footer";
-     grid-template-columns: 1fr;
-     grid-template-rows: 350px 4200px 100px;
-     }
-
-.header,
-.content,
-.footer{
-     padding: 0.5 em;
-     }
 
 /* TAGS */
 
@@ -107,22 +103,22 @@ h1,h2,h3 { font-weight:normal; }
 
 .insurance-intro img {max-width: 35%;}
 .insurance-intro h1 {font-size: 4em;}
-.insurance-intro p {font-size: 2.5em; line-height: 1.25;}
+.insurance-intro p {font-size: 2.25em; line-height: 1.25;}
 
 .investment-intro img {max-width: 35%;}
 .investment-intro h1 {font-size: 4em;}
-.investment-intro p {font-size: 2.5em; line-height: 1.25;}
+.investment-intro p {font-size: 2.25em; line-height: 1.25;}
 
 
 .retirement-intro img {max-width: 35%;}
 .retirement-intro h1 {font-size: 4em;}
-.retirement-intro p {font-size: 2.5em; line-height: 1.25;}
+.retirement-intro p {font-size: 2.25em; line-height: 1.25;}
 
 /* FOOTER ELEMENTS */
 
 @media (max-width: 850px) {
     .container {
-         grid-template-rows: 275px 1100px 75px;
+         grid-template-rows: 275px 3000px 75px;
          }
     .hlist {
          font-size: 1em;
@@ -141,14 +137,27 @@ h1,h2,h3 { font-weight:normal; }
          display: block;
          }
     #col {
-         max-width: 100%;
+         max-width: 90%;
          margin-left: auto;
          margin-right: auto;
          padding: 1em;
          }
-    svg {width: 35%}
 
+    .logo img {max-width: 100%;}
+
+    .questions img {max-width: 100%;}
+
+    .insurance-intro img {max-width: 50%;}
     .insurance-intro h1 {font-size: 3em;}
+    .insurance-intro p {font-size: 1.5em; line-height: 1.25;}
+
+    .investment-intro img {max-width: 50%;}
+    .investment-intro h1 {font-size: 3em;}
+    .investment-intro p {font-size: 1.5em; line-height: 1.25;}
+
+    .retirement-intro img {max-width: 50%;}
+    .retirement-intro h1 {font-size: 3em;}
+    .retirement-intro p {font-size: 1.5em; line-height: 1.25;}
     }
 
 @media (max-width: 350px) {
