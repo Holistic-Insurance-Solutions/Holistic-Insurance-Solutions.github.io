@@ -23,7 +23,7 @@ body {
           "content"
           "footer";
      grid-template-columns: 1fr;
-     grid-template-rows: 375px 3200px 100px;
+     grid-template-rows: 425px 3200px 100px;
      }
 
 .header {
@@ -99,6 +99,8 @@ h1,h2,h3 { font-weight:normal; }
      padding: 1em;
      }
 
+.logo svg {width: 50%; height: 50%;}
+
 .questions img {max-width: 100%;}
 
 .insurance-intro img {max-width: 35%;}
@@ -118,7 +120,7 @@ h1,h2,h3 { font-weight:normal; }
 
 @media (max-width: 850px) {
     .container {
-         grid-template-rows: 275px 3000px 75px;
+         grid-template-rows: 350px 3000px 75px;
          }
     .hlist {
          font-size: 1em;
@@ -142,8 +144,6 @@ h1,h2,h3 { font-weight:normal; }
          margin-right: auto;
          padding: 1em;
          }
-
-    .logo img {max-width: 100%;}
 
     .questions img {max-width: 100%;}
 
