@@ -162,7 +162,7 @@ h1,h2,h3 { font-weight:normal; }
 
 @media (max-width: 350px) {
     .container {
-         grid-template-rows: 350px 1100px 75px;
+         grid-template-rows: 350px 2200px 75px;
          }
     .hlist {
          flex-wrap: wrap;
@@ -174,4 +174,5 @@ h1,h2,h3 { font-weight:normal; }
          }
     .hlist li {flex-wrap: block;}
     svg {width: 40%}
+    .card {width: 75%;}
     }
