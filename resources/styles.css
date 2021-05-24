@@ -174,7 +174,10 @@ h1,h2,h3 { font-weight:normal; }
     #grid-row {
          display: block;
          }
-    #col {
+    #col.insurance-intro,
+    #col.investment-intro,
+    #col.retirement-intro,
+    #col.description {
          max-width: 90%;
          margin-left: auto;
          margin-right: auto;
