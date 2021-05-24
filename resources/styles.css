@@ -174,5 +174,5 @@ h1,h2,h3 { font-weight:normal; }
          }
     .hlist li {flex-wrap: block;}
     svg {width: 40%}
-    #col {width: 75%;}
+    #col {width: 100%;}
     }
