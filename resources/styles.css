@@ -163,20 +163,35 @@ h1,h2,h3 { font-weight:normal; }
 
 @media (max-width: 550px) {
     .container {
-         grid-template-rows: 425px 7650px 75px;
+         grid-template-rows: 475px 7590px 75px;
          }
     .logo svg {width: 50%; height: 50%;}
     .hlist {
          flex-wrap: wrap;
-         font-size: 0.5em;
+         font-size: 0.9em;
          justify-content: center;
          }
     #grid-row {
          display: block;
          }
-    #col.insurance-intro,
-    #col.investment-intro,
-    #col.retirement-intro,
+    #col.insurance-intro {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
+    #col.investment-intro {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
+    #col.retirement-intro {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
     #col.description {
          max-width: 90%;
          margin-left: auto;
