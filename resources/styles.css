@@ -162,7 +162,7 @@ h1,h2,h3 { font-weight:normal; }
 
 @media (max-width: 350px) {
     .container {
-         grid-template-rows: 350px 2200px 75px;
+         grid-template-rows: 350px 4400px 75px;
          }
     .hlist {
          flex-wrap: wrap;
