@@ -120,8 +120,9 @@ h1,h2,h3 { font-weight:normal; }
 
 @media (max-width: 850px) {
     .container {
-         grid-template-rows: 350px 3000px 75px;
+         grid-template-rows: 400px 5700px 75px;
          }
+    .logo svg {width: 35%; height: 35%;}
     .hlist {
          font-size: 1em;
          justify-content: center;
@@ -160,10 +161,11 @@ h1,h2,h3 { font-weight:normal; }
     .retirement-intro p {font-size: 1.5em; line-height: 1.25;}
     }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
     .container {
-         grid-template-rows: 350px 5000px 75px;
+         grid-template-rows: 400px 7500px 75px;
          }
+    .logo svg {width: 50%; height: 50%;}
     .hlist {
          flex-wrap: wrap;
          font-size: 0.75em;
@@ -171,9 +173,13 @@ h1,h2,h3 { font-weight:normal; }
          }
     #grid-row {
          display: block;
-         width: 100%;
          }
-    #col {width: 100%;}
+    #col {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
     .hlist li {flex-wrap: block;}
     svg {width: 40%}
     }
