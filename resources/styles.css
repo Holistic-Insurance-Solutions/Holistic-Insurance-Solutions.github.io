@@ -105,16 +105,16 @@ h1,h2,h3 { font-weight:normal; }
 
 .insurance-intro img {max-width: 35%;}
 .insurance-intro h1 {font-size: 3.5em;}
-.insurance-intro p {font-size: 2em; line-height: 1.1;}
+.insurance-intro p {font-size: 1.5em; line-height: 1.1;}
 
 .investment-intro img {max-width: 35%;}
 .investment-intro h1 {font-size: 3.5em;}
-.investment-intro p {font-size: 2em; line-height: 1.1;}
+.investment-intro p {font-size: 1.5em; line-height: 1.1;}
 
 
 .retirement-intro img {max-width: 35%;}
 .retirement-intro h1 {font-size: 3.5em;}
-.retirement-intro p {font-size: 2em; line-height: 1.1;}
+.retirement-intro p {font-size: 1.5em; line-height: 1.1;}
 
 /* FOOTER ELEMENTS */
 
