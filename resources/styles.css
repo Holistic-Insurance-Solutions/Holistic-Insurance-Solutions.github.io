@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Alice:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Flamenco:300,400,700');
+
+* {
+     box-sizing: border-box;
+     }
+
+body {
+     text-align: center;
+     background: #FCFAF0;
+     font-family: 'Alice';
+     margin: 0em;
+     padding: 0em;
+     }
+
+.container {
+     font-size: 1em;
+     width: 100%;
+     height: 100vh;
+     display: grid;
+     grid-template-areas:
+          "header"
+          "content"
+          "footer";
+     grid-template-columns: 1fr;
+     grid-template-rows: 425px 3300px 100px;
+     }
+
+.header {
+     grid-area: header;
+     font-family: 'Flamenco';
+     background: #DEC200;
+     font-size: 1.25em;
+     }
+
+.content {
+     grid-area: content;
+     }
+
+.footer {
+     grid-area: footer;
+     font-family: 'Flamenco';
+     background: #DEC200;
+     }
+
+
+/* TAGS */
+
+a {
+     color: inherit;
+     text-decoration: none;
+     transition: 0.3s
+     }
+
+button {
+     color: #FCFAF0;
+     background: black;
+     border: none;
+     border-radius: 24px;
+     padding: 0.75em 0.75em;
+     font-size: 1em;
+     font-family: 'Alice';
+     cursor: pointer;
+     margin: 1em;
+     }
+
+h1,h2,h3 { font-weight:normal; }
+
+/* HEADER ELEMENTS */
+.logo {justify-content: center;}
+
+.hlist {
+     display: flex;
+     color: #FCFAF0;
+     justify-content: center;
+     font-size: 1.25em;
+     }
+
+.hlist li {
+     list-style-type: none;
+     display: block;
+     padding: 0.75em;
+     justify-content: center;
+     }
+
+/* CONTENT ELEMENTS */
+
+#grid-row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     padding: 1em;
+     }
+
+#col{
+     flex: 50%;
+     max-width: 50%;
+     padding: 1em;
+     }
+
+.logo svg {width: 50%; height: 50%;}
+
+.questions img {max-width: 100%;}
+
+.insurance-intro img {max-width: 35%;}
+.insurance-intro h1 {font-size: 3.5em;}
+.insurance-intro p {font-size: 1.5em; line-height: 1.1;}
+
+.investment-intro img {max-width: 35%;}
+.investment-intro h1 {font-size: 3.5em;}
+.investment-intro p {font-size: 1.5em; line-height: 1.1;}
+
+
+.retirement-intro img {max-width: 35%;}
+.retirement-intro h1 {font-size: 3.5em;}
+.retirement-intro p {font-size: 1.5em; line-height: 1.1;}
+
+/* FOOTER ELEMENTS */
+
+@media (max-width: 850px) {
+    .container {
+         grid-template-rows: 400px 5700px 75px;
+         }
+    .logo svg {width: 35%; height: 35%;}
+    .hlist {
+         font-size: 1em;
+         justify-content: center;
+         }
+    .header {
+         padding: 1em;
+         }
+    .content {
+         align-content: center;
+         }
+    .footer {
+         font-size: 0.9em;
+         }
+    #grid-row {
+         display: block;
+         }
+    #col {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
+
+    .questions img {max-width: 100%;}
+
+    .insurance-intro img {max-width: 50%;}
+    .insurance-intro h1 {font-size: 3em;}
+    .insurance-intro p {font-size: 1.5em; line-height: 1.25;}
+
+    .investment-intro img {max-width: 50%;}
+    .investment-intro h1 {font-size: 3em;}
+    .investment-intro p {font-size: 1.5em; line-height: 1.25;}
+
+    .retirement-intro img {max-width: 50%;}
+    .retirement-intro h1 {font-size: 3em;}
+    .retirement-intro p {font-size: 1.5em; line-height: 1.25;}
+    }
+
+@media (max-width: 550px) {
+    .container {
+         grid-template-rows: 475px 7590px 75px;
+         }
+    .logo svg {width: 50%; height: 50%;}
+    .hlist {
+         flex-wrap: wrap;
+         font-size: 0.9em;
+         justify-content: center;
+         }
+    #grid-row {
+         display: block;
+         }
+    #col.insurance-intro {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
+    #col.investment-intro {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
+    #col.retirement-intro {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
+    #col.description {
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 1em;
+         }
+    .hlist li {flex-wrap: block;}
+    svg {width: 40%}
+    }
